@@ -58,7 +58,6 @@ export function SFSymbol(props:SFSymbolProps) {
         >
             <path
                 d={selectedSymbol.d}
-                fill={props.fill}
             />
         </svg>
     )
@@ -66,7 +65,6 @@ export function SFSymbol(props:SFSymbolProps) {
 
 SFSymbol.defaultProps = {
     className: '',
-    fill: '#000',
     name: 'square.dashed',
     style: {},
     weight: 'regular',
