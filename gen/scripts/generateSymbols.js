@@ -11,10 +11,11 @@ function writeFile(_path, contents, cb) {
     fs.writeFileSync(_path, contents, cb);
   }
 
+// Paths
 const CHARS = `${__dirname}/../sources/${SF_SYMBOLS_VERSION}/chars.txt`
 const NAMES = `${__dirname}/../sources/${SF_SYMBOLS_VERSION}/names.txt`
 
-async function generate(weight) {
+async function main(weight) {
     // Paths
     const OUT = `${__dirname}/../out/${SF_SYMBOLS_VERSION}/${weight.toLowerCase()}.symbols.json`
 
@@ -97,6 +98,6 @@ async function generate(weight) {
     writeFile(OUT, JSON.stringify(zipped, null, 2), () => {})
 }
 
-weights.forEach(weight => generate(weight))
+weights.forEach(weight => main(weight))
 
 

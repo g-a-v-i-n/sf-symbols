@@ -7,20 +7,19 @@ export function SFSymbol(props: SFSymbolProps) {
 
   return (
     <svg
-      width={selectedSymbol.width}
-      height="auto"
+      width="auto"
+      height={selectedSymbol.height}
       className={props.className}
       viewBox={`0 0 ${selectedSymbol.width} ${selectedSymbol.height}`}
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d={selectedSymbol.d} fill={props.fill} />
+      <path d={selectedSymbol.d} />
     </svg>
   );
 }
 
 SFSymbol.defaultProps = {
   className: "",
-  fill: "#000",
   name: "square.dashed",
   style: {},
   weight: "regular",

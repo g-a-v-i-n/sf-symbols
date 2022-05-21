@@ -9,7 +9,6 @@ function formatCodeString(code) {
     return prettier.format(code, { parser: 'babel',  plugins: [babelParser] })
 }
 
-
 const symbolsWithAllWeights = WEIGHTS.reduce((acc, weight) => {
     const symbols = require(
         `${__dirname}/../out/${SF_SYMBOLS_VERSION}/${weight.toLowerCase()}.symbols.json`
@@ -51,8 +50,8 @@ export function SFSymbol(props:SFSymbolProps) {
 
     return (
         <svg
-            width={selectedSymbol.width}
-            height="auto"
+            width="auto"
+            height={selectedSymbol.height}
             className={props.className}
             viewBox={\`0 0 \${selectedSymbol.width} \${selectedSymbol.height}\`}
             xmlns="http://www.w3.org/2000/svg"
