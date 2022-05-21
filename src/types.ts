@@ -3316,4 +3316,14 @@ export type SFSymbolProps = {
   fill?: string,
   style?: React.CSSProperties,
   name: SFSymbolNames,
+  weight:
+    | "black"
+    | "bold"
+    | "heavy"
+    | "light"
+    | "medium"
+    | "regular"
+    | "semibold"
+    | "thin"
+    | "ultralight",
 };

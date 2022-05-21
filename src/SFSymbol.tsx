@@ -2,13 +2,13 @@ import React from "react";
 import { SFSymbolProps } from "./types";
 import symbols from "./symbols";
 
-function SFSymbol(props: SFSymbolProps) {
-  const selectedSymbol = symbols[props.name];
+export function SFSymbol(props: SFSymbolProps) {
+  const selectedSymbol = symbols[props.weight][props.name];
 
   return (
     <svg
       width={selectedSymbol.width}
-      heigh="auto"
+      height="auto"
       className={props.className}
       viewBox={`0 0 ${selectedSymbol.width} ${selectedSymbol.height}`}
       xmlns="http://www.w3.org/2000/svg"
@@ -23,4 +23,5 @@ SFSymbol.defaultProps = {
   fill: "#000",
   name: "square.dashed",
   style: {},
+  weight: "regular",
 };
