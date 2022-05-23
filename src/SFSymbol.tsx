@@ -1,6 +1,6 @@
 import React from "react";
 import { SFSymbolProps } from "./types";
-import symbols from "./symbols";
+import symbols from "./symbols.json";
 
 export function SFSymbol(props: SFSymbolProps) {
   const selectedSymbol = symbols[props.weight][props.name];

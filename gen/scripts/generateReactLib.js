@@ -34,7 +34,7 @@ fs.writeFileSync(`src/symbols.json`, JSON.stringify(symbolsWithAllWeights, null,
 const SFSymbolDotJs = `
 import React from 'react';
 import {SFSymbolProps} from './types';
-import symbols from './symbols';
+import symbols from './symbols.json';
 
 export function SFSymbol(props:SFSymbolProps) {
     
