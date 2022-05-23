@@ -27,16 +27,8 @@ const symbolsWithAllWeights = WEIGHTS.reduce((acc, weight) => {
     return acc
 }, {});
 
-// Generate the symbols file. Maybe could be a JSON file instead.
-const symbolsDotJs = `
-// SF Symbols Version: ${SF_SYMBOLS_VERSION}
-const symbols = ${JSON.stringify(symbolsWithAllWeights, null, 2)};
-export default symbols;
-`
-
 // Save symbols file to disk.
-fs.writeFileSync(`src/symbols.ts`, formatCodeString(symbolsDotJs))
-
+fs.writeFileSync(`src/symbols.json`, JSON.stringify(symbolsWithAllWeights, null, 2))
 
 // This doesn't really need to be metaprogrammed yet here we are.
 const SFSymbolDotJs = `
