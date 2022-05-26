@@ -1,19 +1,19 @@
-# SF Symbols Bootleg SVG Library
+# SF Symbols SVG Library
 
-This repo is used to create libraries for SF Symbols.
+This repo is used to create libraries for SF Symbols for use on the web, or anywhere SVG is supported. It's main focus is a React library.
 
 ```bash
 pnpm install
 ```
 
-Generally, one should generate the symbols dictionary and then generate the React libary files, unless making changes to the latter.
+Generally, one should generate the symbols dictionary and then generate the React libary files.
 
 ### Generate Symbol Dictionaries
 ```bash
 node ./gen/scripts/generateSymbols.js
 ```
 
-Output can be found in `./gen/out`.
+Output can be found in `./gen/out/<SF Symbols version>`.
 
 ### Generate React Library Files
 ```bash
