@@ -1,15 +1,15 @@
 const SF_SYMBOLS_VERSION = "4.0";
 
 const WEIGHTS = [
-    "black",
+    // "black",
     "bold",
-    "heavy",
-    "light",
-    "medium",
-    "regular",
-    "semibold",
-    "thin",
-    "ultralight",
+    // "heavy",
+    // "light",
+    // "medium",
+    // "regular",
+    // "semibold",
+    // "thin",
+    // "ultralight",
 ];
 
 const PATH_PRECISION = 2;

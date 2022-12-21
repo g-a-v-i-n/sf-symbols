@@ -18,7 +18,7 @@ export type SymbolProps = {
 
 export function Symbol({ name, weight, ...props }: SymbolProps) {
     // @ts-ignore
-    const selectedSymbol = symbolSet.symbols[props.name][props.weight];
+    const selectedSymbol = symbolSet.symbols[name][weight];
 
     return (
         <svg

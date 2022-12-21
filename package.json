@@ -6,7 +6,7 @@
     "scripts": {
         "makeSymbols": "node ./scripts/makeSymbols.js",
         "makeTypes": "node ./scripts/makeTypes.js",
-        "make": "pnpm run makeSymbols && pnpm run makeTypings",
+        "make": "pnpm run makeSymbols && pnpm run makeTypes",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],

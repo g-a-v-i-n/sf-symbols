@@ -22,8 +22,6 @@ const PATHS = {
     OUT: `${__dirname}/../src/symbolSet.json`,
 };
 
-console.log(PATHS);
-
 async function make() {
     console.log("Loading Fonts...");
 
