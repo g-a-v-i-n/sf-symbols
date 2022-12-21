@@ -4,12 +4,7 @@
 
 - This repo is used to convert SF Symbols to SVGs, which can then be used in web projects.
 - The SVGs are generated from the SF Symbols font files, and the names are taken from the SF Symbols app.
-- It exports weights
-- SVG output only supports monochrome mode, and not hierarchical color, multicolor, or variable color features.
-
-```bash
-pnpm install
-```
+- All 4,491 symbols in 9 weights are included. Monochrome color mode only.
 
 ## Usage
 
