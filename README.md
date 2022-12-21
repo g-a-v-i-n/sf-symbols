@@ -40,8 +40,8 @@ pnpm run make
 11. Thats it, now you can run the script below.
 
 ### Note on Bounding Boxes
-
 Currently, extra space is trimmed at the 4 outer edges of each symbol. It might be desirable to retain the initial extra spacing to preserve baseline consistency or x-axis overflow. Preserving these properties would make the symbols in this library more similar to the characters in the font.
 
 ### Note on License
 I do not own nor claim to own SF Symbols. This repo is simply a tool to convert the SF Symbols font into SVGs.
+
